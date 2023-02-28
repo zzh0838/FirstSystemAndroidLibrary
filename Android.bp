@@ -1,0 +1,31 @@
+android_library  {
+    name: "FirstSystemAndroidLibrary",
+
+    srcs: ["src/**/*.java"],
+
+    resource_dirs: ["res"],
+
+    manifest: "AndroidManifest.xml",
+
+    sdk_version: "current",
+
+    product_specific: true,
+
+    // optimize: {
+    //     proguard_flags_files: ["proguard.flags"],
+    // },
+
+
+    // platform_apis: true,
+
+
+    // privileged: true,
+    
+    //依赖
+    static_libs: ["androidx.appcompat_appcompat",],
+
+    java_version: "1.7",
+
+    installable: true,
+
+}
